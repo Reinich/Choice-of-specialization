@@ -1,26 +1,32 @@
-﻿string[] InputArray(int n)
+﻿string[] InputArray()
 {
-    string[] list = new string[n];
-    list = test.Split(new Char[] {' '});
+    string? test = Console.ReadLine();
+    string[] list = test.Split(new Char[] {' '});
     return (list);    
 }
 
-void FindThreeElements(string[] list)
+void
+
+
+
+void FindSizeSecondArray(string[] list)
+{
+    int count = 0;
+    foreach(string item in list)
+        if (item.Length <= 3) count++;
+}
+
+void OutputArray(string[] list)
 {
     foreach(string item in list)
-    {
-        int num = int.Parse(item);
-
-    }
+        Console.Write(item + " ");
 }
 
 
 
 
 Console.Clear();
-Console.Write("Введите количество значений: ");
-int n = Convert.ToInt32(Console.ReadLine());
-Console.WriteLine(InputArray(n));
+string[] array = InputArray();
 
 
 
