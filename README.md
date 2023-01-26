@@ -6,4 +6,5 @@
 4. Выводим новый массив.
 
 
-![2023-01-26_19-17-20](https://user-images.githubusercontent.com/118301450/214889412-a6000d22-d2d1-41fb-8ed1-b5658e4f4a5f.png)
+
+![2023-01-26_19-22-59](https://user-images.githubusercontent.com/118301450/214890848-1361d02a-4de5-4009-9e00-fbfd1dc84530.png)
