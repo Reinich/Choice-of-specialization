@@ -5,15 +5,29 @@
     return (list);    
 }
 
-void
+void FindThreeElementsItem(string[] list)
+{
+    int n = FindSizeSecondArray(list);
+    string[] array = new string[n];
+    int i = 0;
+    foreach(string item in list)
+    {
+        if (item.Length <= 3) 
+        {
+            array[i] = item;
+            i++;
+        }
+    }
+    OutputArray(array);
+}
 
 
-
-void FindSizeSecondArray(string[] list)
+int FindSizeSecondArray(string[] list)
 {
     int count = 0;
     foreach(string item in list)
         if (item.Length <= 3) count++;
+    return count;
 }
 
 void OutputArray(string[] list)
@@ -22,11 +36,11 @@ void OutputArray(string[] list)
         Console.Write(item + " ");
 }
 
-
-
-
 Console.Clear();
 string[] array = InputArray();
+FindThreeElementsItem(array);
+
+
 
 
 
