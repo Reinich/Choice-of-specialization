@@ -8,6 +8,7 @@
 void FindThreeElementsItem(string[] list)
 {
     int n = FindSizeSecondArray(list);
+    if (n == 0) Console.WriteLine("Элементов, равных или меньше трех, нет");
     string[] array = new string[n];
     int i = 0;
     foreach(string item in list)
